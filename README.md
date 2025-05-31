@@ -5,7 +5,7 @@ API ini menyediakan tiga endpoint rekomendasi kuliner berbasis:
 - **Rule-Based**
 - **Location-Based**
 
-API ini dikembangkan menggunakan **Flask** dan memanfaatkan **TensorFlow** untuk normalisasi dan encoding.
+API ini dikembangkan menggunakan **Flask** dan memanfaatkan **TensorFlow** untuk pembuatan model machine learning.
 
 ---
 
@@ -13,8 +13,8 @@ API ini dikembangkan menggunakan **Flask** dan memanfaatkan **TensorFlow** untuk
 
 1. **Clone repositori ini**
    ```bash
-   git clone https://github.com/username/rekomendasi-api.git
-   cd rekomendasi-api
+   git clone https://github.com/cicipin/ml-api.git
+   cd ml-api
    ```
 
 2. **(Opsional) Buat virtual environment**
@@ -191,6 +191,7 @@ flask
 pandas
 tensorflow
 numpy
+scikit-learn
 ```
 
 ---
@@ -198,9 +199,7 @@ numpy
 ## 📞 Kontak
 
 Jika ada pertanyaan lebih lanjut, silakan hubungi:
-- 📧 Email: example@example.com
-- 📱 WhatsApp: +62-812-3456-7890
-- 📸 Instagram: [@kulinerapi](https://instagram.com/kulinerapi)
+- 📧 Email: mc008d5y2338@student.devacademy.id
 
 ---
 
