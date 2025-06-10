@@ -7,9 +7,12 @@ API ini menyediakan tiga endpoint rekomendasi kuliner berbasis:
 
 API ini dikembangkan menggunakan **Flask** dan memanfaatkan **TensorFlow** untuk pembuatan model machine learning.
 
+![Deployment](https://img.shields.io/badge/deployed-yes-brightgreen)
+![Python](https://img.shields.io/badge/python-3.12-blue)
+
 ---
 
-## 📦 Cara Instalasi & Menjalankan Server
+## 📦 Cara Clone & Menjalankan via Lokal
 
 1. **Clone repositori ini**
    ```bash
@@ -34,6 +37,38 @@ API ini dikembangkan menggunakan **Flask** dan memanfaatkan **TensorFlow** untuk
    python main.py
    ```
    Server berjalan di: [http://localhost:5000](http://localhost:5000)
+
+---
+
+## 🚦 Status & Deployment
+
+🔄 **Status:** Aktif  
+🌐 **Base URL:** [http://13.239.12.15:8000](http://13.239.12.15:8000)  
+🚀 **Deployment:** Manual menggunakan `Flask` di server Ubuntu (AWS EC2)  
+📂 **Environment:**  
+- Python 3.11  
+- Gunicorn
+- Port: 8000 (public)
+
+---
+
+## 🌐 Akses API via Server yg Sudah Dijalankan
+
+API bisa diakses secara langsung melalui internet menggunakan **HTTP POST** ke alamat berikut:
+
+```
+http://13.239.12.15:8000/
+```
+
+---
+
+## 📚 Ringkasan Endpoint
+
+| Endpoint                  | Metode | Deskripsi                      |
+|---------------------------|--------|-------------------------------|
+| `/rekomendasi/content`    | POST   | Rekomendasi berdasarkan toko serupa |
+| `/rekomendasi/rule`       | POST   | Rekomendasi berdasarkan aturan jenis |
+| `/rekomendasi/location`   | POST   | Rekomendasi berdasarkan lokasi pengguna |
 
 ---
 
@@ -187,11 +222,11 @@ curl -X POST http://localhost:5000/rekomendasi/location \
 ## 📎 File requirements.txt
 
 ```
-flask
-pandas
-tensorflow
-numpy
-scikit-learn
+flask==2.3.3
+numpy==2.0.2
+pandas==2.2.3
+scikit-learn==1.5.2
+tensorflow==2.18.0
 ```
 
 ---
