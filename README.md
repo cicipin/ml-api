@@ -46,7 +46,7 @@ API ini dikembangkan menggunakan **Flask** dan memanfaatkan **TensorFlow** untuk
 🌐 **Base URL:** [http://13.239.12.15:8000](http://13.239.12.15:8000)  
 🚀 **Deployment:** Manual menggunakan `Flask` di server Ubuntu (AWS EC2)  
 📂 **Environment:**  
-- Python 3.11  
+- Python 3.12
 - Gunicorn
 - Port: 8000 (public)
 
