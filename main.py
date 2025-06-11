@@ -6,6 +6,7 @@ from model.rule_based import rekomendasi_rule_based
 from model.location_based import rekomendasi_location_based
 
 app = Flask(__name__)
+CORS(app)
 
 # Load DataFrame sekali saja
 data = pd.read_csv("dataset/data_siap_model.csv")
