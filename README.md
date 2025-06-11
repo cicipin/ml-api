@@ -43,7 +43,7 @@ API ini dikembangkan menggunakan **Flask** dan memanfaatkan **TensorFlow** untuk
 ## 🚦 Status & Deployment
 
 🔄 **Status:** Aktif  
-🌐 **Base URL:** [http://13.239.12.15:8000](http://13.239.12.15:8000)  
+🌐 **Base URL:** [http://3.106.215.1:8000](http://3.106.215.1:8000)  
 🚀 **Deployment:** Manual menggunakan `Flask` di server Ubuntu (AWS EC2)  
 📂 **Environment:**  
 - Python 3.12
@@ -57,7 +57,7 @@ API ini dikembangkan menggunakan **Flask** dan memanfaatkan **TensorFlow** untuk
 API bisa diakses secara langsung melalui internet menggunakan **HTTP POST** ke alamat berikut:
 
 ```
-http://13.239.12.15:8000/
+http://3.106.215.1:8000/
 ```
 
 ---

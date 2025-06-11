@@ -1,4 +1,5 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS  # Tambahkan ini
 import pandas as pd
 from model.content_based import rekomendasi_content_based
 from model.rule_based import rekomendasi_rule_based
