@@ -16,7 +16,7 @@ def hitung_jarak(lat1, lon1, lat2_array, lon2_array):
     c = 2 * np.arcsin(np.sqrt(a))
     return R * c
 
-def rekomendasi_location_based(df, user_lat, user_lon, radius_km=1.0, top_n=10, w_rating=0.7, w_review=0.3):
+def rekomendasi_location_based(df, user_lat, user_lon, radius_km=3.0, top_n=10, w_rating=0.7, w_review=0.3):
     # Hitung jarak dari user ke semua toko
     jarak_km = hitung_jarak(user_lat, user_lon, df["Latitude"].values, df["Longitude"].values)
     df = df.copy()
