@@ -43,12 +43,11 @@ API ini dikembangkan menggunakan **Flask** dan memanfaatkan **TensorFlow** untuk
 ## 🚦 Status & Deployment
 
 🔄 **Status:** Aktif  
-🌐 **Base URL:** [http://3.106.215.1:8000](http://3.106.215.1:8000)  
+🌐 **Base URL:** [http://cicipin-api.duckdns.org/](http://cicipin-api.duckdns.org/)  
 🚀 **Deployment:** Manual menggunakan `Flask` di server Ubuntu (AWS EC2)  
 📂 **Environment:**  
 - Python 3.12
 - Gunicorn
-- Port: 8000 (public)
 
 ---
 
@@ -57,7 +56,7 @@ API ini dikembangkan menggunakan **Flask** dan memanfaatkan **TensorFlow** untuk
 API bisa diakses secara langsung melalui internet menggunakan **HTTP POST** ke alamat berikut:
 
 ```
-http://3.106.215.1:8000/
+http://cicipin-api.duckdns.org/
 ```
 
 ---

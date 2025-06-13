@@ -47,8 +47,8 @@ def location_route():
         return jsonify({"error": "Parameter 'lat' dan 'lon' harus berupa angka"}), 400
 
     # Parameter opsional
-    radius_km = float(request.json.get("radius_km", 1.0))
-    top_n = int(request.json.get("top_n", 3))
+    radius_km = float(request.json.get("radius_km", 2.0))
+    top_n = int(request.json.get("top_n", 10))
     w_rating = float(request.json.get("w_rating", 0.7))
     w_review = float(request.json.get("w_review", 0.3))
 
